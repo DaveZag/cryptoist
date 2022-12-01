@@ -11,12 +11,14 @@ import './App.css';
 function App() {
   return (
     <Provider store={store}>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/details/:coinId" element={<Details />} />
-        <Route path="/*" element={<NoMatch />} />
-      </Routes>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/details/:coinId" element={<Details />} />
+          <Route path="/*" element={<NoMatch />} />
+        </Routes>
+      </div>
     </Provider>
   );
 }

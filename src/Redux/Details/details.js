@@ -10,13 +10,9 @@ const detailSlice = createSlice({
   name: 'Details',
   initialState: {
     coinDetails: [],
-    loading: false,
+    loading: true,
   },
   extraReducers: (builder) => {
-    builder.addCase(fetchDetails.pending, (state) => ({
-      ...state,
-      loading: true,
-    }));
     builder.addCase(fetchDetails.fulfilled, (state, action) => ({
       ...state,
       coinDetails: action.payload,

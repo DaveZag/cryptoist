@@ -5,25 +5,27 @@ import { FiArrowUpRight, FiArrowDown } from 'react-icons/fi';
 const Coin = ({
   image, name, currentPrice, priceChangePercentage24h,
 }) => (
-  <div className="Coin-card">
+  <div className="coin-card flex">
     <img src={image} alt="coin brand" />
-    <p>{name}</p>
-    {/* prettier-ignore */}
-    <p>
-      $
-      {currentPrice}
-    </p>
-    {priceChangePercentage24h > 0 ? (
-      <span className="coin-up">
-        <FiArrowUpRight />
-        {priceChangePercentage24h}
-      </span>
-    ) : (
-      <span className="coin-down">
-        <FiArrowDown />
-        {priceChangePercentage24h}
-      </span>
-    )}
+    <div className="coin-details">
+      <p className="coin-name">{name}</p>
+      {/* prettier-ignore */}
+      <p className="coin-price">
+        $
+        {currentPrice}
+      </p>
+      {priceChangePercentage24h > 0 ? (
+        <span className="coin-up">
+          <FiArrowUpRight />
+          {priceChangePercentage24h}
+        </span>
+      ) : (
+        <span className="coin-down">
+          <FiArrowDown />
+          {priceChangePercentage24h}
+        </span>
+      )}
+    </div>
   </div>
 );
 
