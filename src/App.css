@@ -50,7 +50,7 @@ a:hover {
   background-color: rgb(255, 255, 255);
   color: black;
   padding: 0.7rem 1rem;
-  font-size: clamp(1.1rem, 4vw, 1.4rem);
+  font-size: 1.1rem;
   margin-bottom: 2rem;
   text-transform: uppercase;
 }
@@ -81,7 +81,7 @@ a:hover {
 }
 
 .header svg {
-  font-size: clamp(1.3rem, 4vw, 1.8rem);
+  font-size: 1.3rem;
 }
 
 .header svg:hover {
@@ -99,7 +99,7 @@ a:hover {
 
 .search-input {
   display: block;
-  width: min(80%, 35rem);
+  width: 80%;
   padding: 0.8rem 2rem;
   background-color: black;
   border: none;
@@ -125,7 +125,7 @@ a:hover {
 }
 
 .card-container {
-  width: min(74%, 23rem);
+  width: 74%;
 }
 
 .coin-card {
@@ -198,6 +198,11 @@ a:hover {
 @media screen and (min-width: 768px) {
   .header {
     padding-inline: 4rem;
+    font-size: 1.4rem;
+  }
+
+  header svg {
+    font-size: 1.8rem;
   }
 
   .loader {
@@ -206,10 +211,15 @@ a:hover {
 
   .search-input {
     padding-block: 1rem;
+    width: 35rem;
   }
 
   .search-input::placeholder {
     font-size: 1rem;
+  }
+
+  .card-container {
+    width: 23rem;
   }
 
   .coins-container {

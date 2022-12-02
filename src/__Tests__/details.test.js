@@ -11,7 +11,7 @@ describe('Tests for the details page', () => {
         <Router>
           <Details />
         </Router>
-      </Provider>
+      </Provider>,
     );
     expect(pageView).toMatchSnapshot();
   });
