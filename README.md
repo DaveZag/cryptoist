@@ -97,8 +97,11 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Microverse for the template and project structure.
-- Flaticon for the icons.
+Thanks to:
+
+- [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for the website template design that inspired mine.
+- [CoinGecko](https://www.coingecko.com/en/api/documentation) for the crypto market data and other important metrics.
+- [Flaticon](https://www.flaticon.com/) for the icons.
 
 ## 📝 License
 
