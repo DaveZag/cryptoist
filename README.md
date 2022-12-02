@@ -2,7 +2,7 @@
 
 # Cryptoist
 
-> This project is a SPA built around coingeco's Api; it fetches the crypto market's data and displays it to the user for informative purposes in well structured and interactive UI.
+> This project is a SPA built around coingeco's Api; it fetches the crypto market's data and displays it to the user for informative purposes in well-structured and interactive UI.
 
 ## Built With
 
