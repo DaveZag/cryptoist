@@ -59,6 +59,27 @@ a:hover {
   font-weight: 600;
 }
 
+.header-text:hover {
+  color: rgb(25, 25, 58);
+}
+
+.logo {
+  justify-content: center;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.logo img {
+  height: 1.2rem;
+  width: auto;
+}
+
+.header-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header svg {
   font-size: clamp(1.3rem, 4vw, 1.8rem);
 }
@@ -179,6 +200,10 @@ a:hover {
     padding-inline: 4rem;
   }
 
+  .loader {
+    margin-top: 10rem;
+  }
+
   .search-input {
     padding-block: 1rem;
   }
@@ -192,9 +217,17 @@ a:hover {
     flex-wrap: wrap;
   }
 
+  .details-container {
+    padding-inline: 4%;
+  }
+
   .details-image {
     display: block;
     width: 15%;
+  }
+
+  .details-list-item {
+    padding-inline: 2rem;
   }
 }
 

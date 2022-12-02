@@ -15,8 +15,6 @@ const Details = () => {
     dispatch(fetchDetails(coinId));
   }, []);
 
-  console.log(coinDetails);
-
   return (
     <div className="details-container limit">
       {loading ? (
@@ -36,10 +34,18 @@ const Details = () => {
                 <h3>Symbol:</h3>
                 <p>{`${coinDetails.symbol.toUpperCase()}`}</p>
               </li>
-              <li className="details-list-item flex">
-                <h3>Creation Date:</h3>
-                <p>{coinDetails.genesis_date.toLocaleString()}</p>
-              </li>
+              {coinDetails.market_data.market_cap_rank ? (
+                <li className="details-list-item flex">
+                  <h3>Market Cap Rank:</h3>
+                  <p>{`${coinDetails.market_data.market_cap_rank}`}</p>
+                </li>
+              ) : null}
+              {coinDetails.genesis_date ? (
+                <li className="details-list-item flex">
+                  <h3>Creation Date:</h3>
+                  <p>{coinDetails.genesis_date.toLocaleString()}</p>
+                </li>
+              ) : null}
               <li className="details-list-item flex">
                 <h3>Current Price:</h3>
                 <p>{`$ ${coinDetails.market_data.current_price.usd.toLocaleString()}`}</p>

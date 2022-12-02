@@ -1,7 +1,7 @@
 function NoMatch() {
   return (
-    <div>
-      <h1>404 Not Found</h1>
+    <div className="not-found">
+      <h2>404 Not Found</h2>
     </div>
   );
 }
