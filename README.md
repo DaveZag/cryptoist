@@ -14,7 +14,7 @@
 
 ## Live Demo (if available)
 
-[**See Project 🚀**](https://)
+[**See Project 🚀**](https://cryptoist.netlify.app/)
 
 ## Screenshot
 
