@@ -8,7 +8,7 @@
 
 - HTML, CSS and JavaScript.
 - React.js.
-- Node.js (npm).
+- Node.js(npm).
 - Jest(for testing).
 - CoinGeco API.
 
